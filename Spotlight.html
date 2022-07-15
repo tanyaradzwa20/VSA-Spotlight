@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="rubik-cufonfonts-webfont/style.css">
+    <link rel="stylesheet" href="vendors/fontawesome-5.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>SpotLight</title>
+</head>
+<body>
+<!--start navbar  -->
+<div class="header">
+    <div>
+        <a href="index.html"><img src="images/logo.png" alt="vsa-image"></a> 
+        <a href="about.html" class="d-none d-sm-block">ABOUT US</a>
+    </div>
+    <input id="chk" type="checkbox"  >
+    <label for="chk" class="show-menu-btn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <ul class="menu">
+        <li class="icon-display-none"> <a href="index.html" >HOME</a></li>
+        <li class="icon-display-none"> <a href="about.html" >ABOUT US</a></li>
+        <li> <a href="Spotlight.html" >SPOTLIGHT</a></li>
+        <li> <a href="opportunities.html"><i class="fas fa-circle"></i> OPPORTUNITIES</a></li> 
+        <li> <a href="projects.html" class="active"><i class="fas fa-circle"></i> PROJECTS</a></li> 
+        <li> <a href="blog.html" ><i class="fas fa-circle"></i> BLOG</a></li> 
+        <li> <a href="donate.html" >DONATE</a></li> 
+        <label for="chk" class="hide-menu-btn">
+            <i class="fas fa-times "></i>
+        </label>   
+    </ul>
+</div> 
+<!-- END NAVBAR -->
+<!-- start spotlight homepage -->
+<section class="Spotlight-billboard" id="SpotLight">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>FEATURED SPOTLIGHT:</h1>
+                <p><img src="images/flag3.png" alt="vsa flag" class="flag">Asma Bashir, PhD</p>
+                <h5>#organicChemistry</h5>
+                <h5>#cryopreservation</h5>
+                <a href="#" class="btn">READ SPOTLIGHT</a>
+            </div>
+            <div class="col-md-6">
+                <img src="images/Spotlight.png" alt="SPOTLIGHT" class="d-none d-md-block">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end spotlight home page -->
+<!-- START about spotlight-->
+<section class="spotlight-about" id="hero">
+    <div class="container">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade " data-ride="carousel" data-interval="50000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+               <div class="billboard-inner ">
+                <h2>What advice would you like to give to young, aspiring African’s in STEM?</h2>
+                <div class="first-div">
+                    <p>Understand your history and savour the community mentality that a lot of us were taught to have and uphold.</p> 
+                    <p>It can feel like an overwhelming burden, feeling like you carry a community on your shoulders, but
+                        realise that your successes feel so much bigger when you realise that you have an entire continent and diaspora cheering you on.
+                    </p> 
+                </div>
+                <div>
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">PREVIOUS</a>
+                    <div>
+                      <img src="images/flag3.png" alt="SpotLight">
+                      <a href="#">Ana Ampaw </a>
+                      <li><a href="#">PhD Researcher</a></li>
+                    </div>
+                    <a class="left carousel-control " href="#myCarousel" data-slide="next">NEXT</a>
+                </div>
+                </div>
+            </div>
+          <div class="carousel-item">
+            <div class="billboard-inner ">
+                <h2>What advice would you like to give to young, aspiring African’s in STEM?</h2>
+                <div class="first-div">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, maiores! Ratione qui deleniti optio minus laboriosam quaerat </p> 
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur rerum laboriosam similique ipsa minus nisi, possimus facilis obcaecati 
+                       illum eaque quia maiores a itaque sunt unde? Magnam necessitatibus quos magni culpa nihil. Placeat architecto et id rem tempora debitis officia?
+                    </p> 
+                </div>
+                <div>
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">PREVIOUS</a>
+                    <div>
+                      <img src="images/flag4.png" alt="SpotLight">
+                      <a href="#">Eli Lubik </a>
+                      <li><a href="#">PhD Researcher</a></li>
+                    </div>
+                    <a class="left carousel-control " href="#myCarousel" data-slide="next">NEXT</a>
+                </div>
+                </div>
+          </div>
+        <a class="carousel-control-prev " href="#carouselExampleFade" role="button" data-slide="prev"></a>
+        <a class="carousel-control-next " href="#carouselExampleFade" role="button" data-slide="next"></a>
+        </div>
+      </div>
+    </div>
+</section> 
+<!-- start more spotlights -->
+<section class="more-spotlights">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/SPOTLIGHT IMAGES drive-download-20200825T144628Z-001/Spotlights/Muhammad Ali.jpg" alt="spot-light-img" class="rounded-circle">
+            </div>
+            <div class="col-md-8">
+                <h1 >READ MORE SPOTLIGHTS</h1>
+                <div>
+                    <p>Filter Your Search...</p>
+                    <p>Search by Country or Field</p>
+                    <div>
+                        <!--by country -->
+                        <div class="user-id" id="user" >
+                          <p class="user-name">Country </p>
+                          <div class="dropdown-arrow btnn rotate" ></div>
+                          <div class="dropdown-menu myText">
+                               <div class="controls">
+                                   <a href="javascript:void(0)" type="button" onclick="filterToggle('country','all')" class="filter-country"><i class="fas fa-square-o fast fast-1"></i>All</a>
+                                   <a href="javascript:void(0)" type="button" onclick="filterToggle('country','ghana')"><i class="fas fa-square-o fast fast-1" id="me"></i>Ghana</a>
+                                   <a href="javascript:void(0)" type="button" onclick="filterToggle('country','cote')"><i class="fas fa-square-o  fast fast-1"></i>Cote d'lvoire</a>
+                                   <a href="javascript:void(0)" type="button" onclick="filterToggle('country','egypt')"><i class="fas fa-square-o fast fast-1" ></i>Egypt</a>
+                                   <a href="javascript:void(0)" type="button" onclick="filterToggle('country','south')"><i class="fas fa-square-o fast fast-1" ></i> South Africa</a>
+
+                               </div>
+                         
+                          </div>
+                         </div>
+                        <!--by field -->
+                        <div class="user-id">
+                            <p class="user-name">Field </p>
+                            <div class="dropdown-arrow btnnn rotate"></div>
+                            <div class="dropdown-menu Text">
+                                <div>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','all')"  class="bnt">   <i class="fas fa-square-o fast fast-2"></i>All</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','artIn')" class="bnt">    <i class="fas fa-square-o fast fast-2"></i>Artificial Intelligence</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','astro')"  class="bnt">   <i class="fas fa-square-o fast fast-2"></i> Astronomy</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','phys')">   <i class="fas fa-square-o fast fast-2"></i> Astrophysics</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','biochem')"><i class="fas fa-square-o fast fast-2"></i> Biochemistry</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','bio')"><i class="fas fa-square-o fast fast-2"></i> Biology</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','bioinfo')"><i class="fas fa-square-o fast fast-2"></i> Bioinformics</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','biome')"><i class="fas fa-square-o fast fast-2"></i> Biomedicine</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','comp')"><i class="fas fa-square-o fast fast-2"></i> Computer Science</a>
+                                </div>
+                                <div>
+                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i>Artificial Intelligence</a>
+                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i> Astronomy</a>
+                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i> Astrophysics</a>
+                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i> Biochemistry</a>
+                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i> Biology</a>
+                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i> Bioinformics</a>
+                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i> Biomedicine</a>
+                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i> Computer Science</a>
+                                </div>
+                                <div>
+                                    <a href="javascript:void(0)"><i class="fas fa-square-o fast fast-2"></i>Artificial Intelligence</a>
+                                    <a href="javascript:void(0)"><i class="fas fa-square-o fast fast-2"></i> Astronomy</a>
+                                    <a href="javascript:void(0)"><i class="fas fa-square-o fast fast-2"></i> Astrophysics</a>
+                                    <a href="javascript:void(0)"><i class="fas fa-square-o fast fast-2"></i> Biochemistry</a>
+                                    <a href="javascript:void(0)"><i class="fas fa-square-o fast fast-2 "></i> Biology</a>
+                                    <a href="javascript:void(0)"><i class="fas fa-square-o fast fast-2"></i> Bioinformics</a>
+                                    <a href="javascript:void(0)"><i class="fas fa-square-o fast fast-2"></i> Biomedicine</a>
+                                    <a href="javascript:void(0)"><i class="fas fa-square-o fast fast-2"></i> Computer Science</a>
+                                </div>
+                            </div>
+                           </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end more spotlights -->
+<!-- start section -->
+<section class="more-cards">
+  <div class="row myCard">
+      <div class="col-md-3 mix egypt all comp biochem">
+          <a href="Inner-spotlight.html" class="inner-spotlight-link">
+            <div class="card ">
+              <div class="spotlight-img">
+                  <img src="images/SPOTLIGHT IMAGES drive-download-20200825T144628Z-001/Spotlights/ Kolisa Yola Sinyanya.png" alt="SPOTLIGHT" class="rounded-circle">
+                  <img src="images/flag1.png" alt="SPOTLIGHT" class="flag">
+              </div>
+              <p>Aminata Coulibaly </p>
+              <p>Postdoctoral researcher</p>
+              <div>
+                 <h5>#immunology</h5>
+                 <h5>#neuroscience</h5>
+              </div>
+           </div>
+        </a>
+        </a>
+       </div>  
+      <div class="col-md-3 mix cote  all comp bio biome">
+        <a href="Inner-spotlight.html" class="inner-spotlight-link">
+            <div class="card">
+              <div class="spotlight-img">
+                  <img src="images/SPOTLIGHT IMAGES drive-download-20200825T144628Z-001/Spotlights/ Mennat Allah Labib.jpg" alt="SPOTLIGHT" class="rounded-circle">
+                  <img src="images/flag2.png" alt="SPOTLIGHT" class="flag">
+              </div>
+              <p>Mohamed Tarek Badr</p>
+              <p>Mohamed Tarek Badr</p>
+              <div>
+                 <h5>#Diagnostics</h5>
+                 <h5> #medicine</h5>
+              </div>
+           </div>
+        </a>
+       </div>  
+      <div class="col-md-3 mix ghana all bio  biochem biome" >
+        <a href="Inner-spotlight.html" class="inner-spotlight-link">
+            <div class="card ">
+              <div class="spotlight-img">
+                  <img src="images/SPOTLIGHT IMAGES drive-download-20200825T144628Z-001/Spotlights/ Mennat Allah Labib.jpg" alt="SPOTLIGHT" class="rounded-circle">
+                  <img src="images/flag3.png" alt="SPOTLIGHT" class="flag">
+              </div>
+              <p>Anna Ampaw </p>
+              <p>PhD Researcher</p>
+              <div>
+                 <h5>#OrganicChemistry </h5>
+                 <h5>#Cryopreservation</h5>
+              </div>
+            </div>
+        </a>
+       </div>  
+      <div class="col-md-3 mix south all bio  artIn biome">
+        <a href="Inner-spotlight.html" class="inner-spotlight-link">
+            <div class="card">
+              <div class="spotlight-img">
+                  <img src="images/SPOTLIGHT IMAGES drive-download-20200825T144628Z-001/Spotlights/ Osayamen Julius Imarhiagbe.jpg" alt="SPOTLIGHT" class="rounded-circle">
+                  <img src="images/flag4.png" alt="SPOTLIGHT" class="flag">
+              </div>
+              <p>Nicholas Bèchet</p>
+              <p>PhD researcher</p>
+              <div>
+                 <h5>#neuroscience</h5>
+                 <h5> #Alzeihmers</h5>
+              </div>
+            </div>
+        </a>
+          </div>  
+    <!--2end  row  -->
+      <div class="col-md-3 mix egypt all comp biochem">
+        <a href="Inner-spotlight.html" class="inner-spotlight-link">
+           <div class="card">
+          <div class="spotlight-img">
+              <img src="images/SPOTLIGHT IMAGES drive-download-20200825T144628Z-001/Spotlights/1Muhammed Al-Ghazali Etudaiye.jpg" alt="SPOTLIGHT" class="rounded-circle">
+              <img src="images/flag1.png" alt="SPOTLIGHT" class="flag">
+          </div>
+          <p>Aminata Coulibaly </p>
+          <p>Postdoctoral researcher</p>
+          <div>
+             <h5>#immunology</h5>
+             <h5>#neuroscience</h5>
+          </div>
+           </div>
+         </a>
+      </div>  
+      <div class="col-md-3 mix cote  all comp bio biome">
+        <a href="Inner-spotlight.html" class="inner-spotlight-link">
+           <div class="card">
+          <div class="spotlight-img">
+              <img src="images/SPOTLIGHT IMAGES drive-download-20200825T144628Z-001/Spotlights/2020.01.27_Adama_Saccoh.jpg" alt="SPOTLIGHT" class="rounded-circle">
+              <img src="images/flag2.png" alt="SPOTLIGHT" class="flag">
+          </div>
+          <p>Mohamed Tarek Badr</p>
+          <p>Mohamed Tarek Badr</p>
+          <div>
+             <h5>#Diagnostics</h5>
+             <h5> #medicine</h5>
+          </div>
+           </div>
+        </a>
+      </div>  
+      <div class="col-md-3 mix ghana all bio  bioinfo ">
+        <a href="Inner-spotlight.html" class="inner-spotlight-link">
+           <div class="card ">
+          <div class="spotlight-img">
+              <img src="images/SPOTLIGHT IMAGES drive-download-20200825T144628Z-001/Spotlights/2020_01_Amanda Chirpy.jpg" alt="SPOTLIGHT" class="rounded-circle">
+              <img src="images/flag3.png" alt="SPOTLIGHT" class="flag">
+          </div>
+          <p>Anna Ampaw </p>
+          <p>PhD Researcher</p>
+          <div>
+             <h5>#OrganicChemistry </h5>
+             <h5>#Cryopreservation</h5>
+          </div>
+           </div>
+        </a>
+      </div>  
+      <div class="col-md-3 mix south all bio  artIn">
+        <a href="Inner-spotlight.html" class="inner-spotlight-link">
+          <div class="card">
+          <div class="spotlight-img">
+              <img src="images/SPOTLIGHT IMAGES drive-download-20200825T144628Z-001/Spotlights/AminataCoulibaly.jpg" alt="SPOTLIGHT" class="rounded-circle" class="rounded-circle">
+              <img src="images/flag4.png" alt="SPOTLIGHT" class="flag">
+          </div>
+          <p>Nicholas Bèchet</p>
+          <p>PhD researcher</p>
+          <div>
+             <h5>#neuroscience</h5>
+             <h5> #Alzeihmers</h5>
+          </div>
+          </div>
+        </a>
+      </div>  
+<!-- 3rd row -->
+      <div class="col-md-3 mix egypt all comp biochem">
+        <a href="Inner-spotlight.html" class="inner-spotlight-link">
+            <div class="card">
+      <div class="spotlight-img">
+          <img src="images/SPOTLIGHT IMAGES drive-download-20200825T144628Z-001/Spotlights/2020_01_Audrey Nozithelo Ncube .jpg" alt="SPOTLIGHT" class="rounded-circle">
+          <img src="images/flag1.png" alt="SPOTLIGHT" class="flag">
+      </div>
+      <p>Aminata Coulibaly </p>
+      <p>Postdoctoral researcher</p>
+      <div>
+         <h5>#immunology</h5>
+         <h5>#neuroscience</h5>
+      </div>
+            </div>
+        </a>
+      </div>  
+      <div class="col-md-3 mix cote  all comp bio">
+        <a href="Inner-spotlight.html" class="inner-spotlight-link">
+           <div class="card">
+      <div class="spotlight-img">
+          <img src="images/SPOTLIGHT IMAGES drive-download-20200825T144628Z-001/Spotlights/2020_01_Evans Owusu.jpg" alt="SPOTLIGHT" class="rounded-circle">
+          <img src="images/flag2.png" alt="SPOTLIGHT" class="flag">
+      </div>
+      <p>Mohamed Tarek Badr</p>
+      <p>Mohamed Tarek Badr</p>
+      <div>
+         <h5>#Diagnostics</h5>
+         <h5> #medicine</h5>
+      </div>
+           </div>
+        </a>
+       </div>  
+      <div class="col-md-3 mix ghana all bio  biochem biome">
+        <a href="Inner-spotlight.html" class="inner-spotlight-link">
+          <div class="card ">
+      <div class="spotlight-img">
+          <img src="images/SPOTLIGHT IMAGES drive-download-20200825T144628Z-001/Spotlights/2020_01_Mathapelo P Seopela .png" alt="SPOTLIGHT" class="rounded-circle">
+          <img src="images/flag3.png" alt="SPOTLIGHT" class="flag">
+      </div>
+      <p>Anna Ampaw </p>
+      <p>PhD Researcher</p>
+      <div>
+         <h5>#OrganicChemistry </h5>
+         <h5>#Cryopreservation</h5>
+      </div>
+          </div>
+        </a>
+       </div>  
+      <div class="col-md-3 mix south all bio  artIn ">
+        <a href="Inner-spotlight.html" class="inner-spotlight-link">
+          <div class="card">
+      <div class="spotlight-img">
+          <img src="images/SPOTLIGHT IMAGES drive-download-20200825T144628Z-001/Spotlights/Alphonse K Rwanda - Kanyandekwe Alphonse.png" alt="SPOTLIGHT" class="rounded-circle">
+          <img src="images/flag4.png" alt="SPOTLIGHT" class="flag">
+      </div>
+      <p>Nicholas Bèchet</p>
+      <p>PhD researcher</p>
+      <div>
+         <h5>#neuroscience</h5>
+         <h5> #Alzeihmers</h5>
+      </div>
+          </div>
+         </a>
+       </div>  
+    </div>
+</section>
+<input type="hidden" id="selected_country" />
+<input type="hidden" id="selected_field" />
+
+
+<!--START FOOTER -->
+<section class="footer" id="footer">
+    <div class="div">
+        <a href="www.facebook.com">
+            <img src="images/facebook-icon.png" alt="spotlight" onmouseover="this.src='images/facebook-hover.png'" onmouseout="this.src='images/facebook-icon.png'" >
+        </a>
+        <a href="www.twitter.com">
+            <img src="images/twitter-icon.png" alt="spotlight" onmouseover="this.src='images/twitter-hover.png'" onmouseout="this.src='images/twitter-icon.png'">
+        </a>
+        <a href="www.instagram.com">
+            <img src="images/instagram-icon.png" alt="spotlight" onmouseover="this.src='images/insta-hover.png'" onmouseout="this.src='images/instagram-icon.png'">
+        </a>
+        <a href="javascript:void(0)">
+            <img src="images/envelope-icon.png" alt="spotlight" onmouseover="this.src='images/envolope-hover.png'" onmouseout="this.src='images/envelope-icon.png'">
+        </a>
+    </div>
+    <p>copyright 2020 | all rights reserved</p>
+</section>
+<!--END FOOTER -->
+
+<script src="vendors/jquery-2.2.4.min.js"></script>
+<script src="popper.js"></script>
+<script src="vendors/bootstrap.min.js"></script>
+<script src="vendors/mixitup.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
